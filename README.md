@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @vengatkalai
 - 👀 I’m interested in php developer
-- 🌱 I’m currently learning basics
+- 🌱 I’m currently learning php laravel
 - 💞️ I’m looking to collaborate on my sucess sport?
 
 <!---
