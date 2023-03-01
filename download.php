@@ -10,17 +10,17 @@ if (mysqli_num_rows($result) > 0) {
     $pdf = $row['doc'];
     $file = '' . $pdf;
 
-    if (headers_sent()) {
-        echo 'HTTP header already sent';
-    } else {
-        ob_end_clean();
-        header('Content-Type: application/pdf');
-        header('Content-Disposition: attachment; filename="' . $pdf . '"');
-        header('Content-Transfer-Encoding: binary');
-        header('Content-Length: ' . filesize($file));
-        readfile($file);
-        exit;
-    }
+    // if (headers_sent()) {
+        echo '<iframe src="'.$file.'" width="100%" height="100%" alt="file" />';
+    // } else {
+    //     ob_end_clean();
+    //     header('Content-Type: application/pdf');
+    //     header('Content-Disposition: attachment; filename="' . $pdf . '"');
+       
+    //     header('Content-Length: ' . filesize($file));
+    //     readfile($file);
+    //     exit;
+    // }
 } else {
     echo 'File not found';
 }
